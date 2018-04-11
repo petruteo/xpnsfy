@@ -19,7 +19,6 @@ const ExpenseDashboardPage = (props) => (
 			View {props.expenses.length} expenses totaling{' '}
 			{numeral(props.expenses.map((expense) => expense.amount).reduce((a, b) => a + b, 0)).format('$0,0.00')}.
 		</h1>
-		{console.log(props.expenses.length)}
 
 		<ExpenseListFilters />
 		<ExpenseList />
